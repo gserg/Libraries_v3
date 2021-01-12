@@ -23,7 +23,7 @@
     ! .. apply boundary condition at r=0
 
     do m = 1,ks-1
-      bs(m,ks-m+1)=0.d0
+     bs(m,ks-m+1)=0.d0
     end do
     bs(ks,1) = 1.d0
 

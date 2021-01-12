@@ -16,10 +16,9 @@ S  =	DBS_nuclear.f90          DBS_grid.f90             DBS_gauss.f90            
 	read_pqbs.f90            rk_pq.f90                rk.f90                   \
 	sk.f90                   sk_pq.f90                sum_amb.f90              \
 	tvm.f90                  update_hs.f90            zbsplvd.f90              \
-	zint.f90                 zinty.f90                vinty.f90                \
+	zint.f90                 zinty.f90                                         \
 	DBS_mult.f90             gen_hd.f90
 
-#        ykf.f90
 	
  
 O = $(S:.f90=.o)
@@ -30,7 +29,7 @@ $(N).a : $(O)
 	rm *.o *.a
  
 clean:
-	rm  *.o *.mod *.a *~  
+	rm  *.o *.a  
  
 .SUFFIXES:
 .SUFFIXES: .f90 .mod .o .f
@@ -38,8 +37,5 @@ clean:
 .f90.o:
 	$(FC) $(compL) $<
  
-.f.o:
-	$(FC) $(compL) $<
- 
 
-# -fcheck=bounds -fbacktrace 
+# -fcheck=bounds -fbacktrace   -fcheck=all -Wall 

@@ -61,7 +61,10 @@
 ! ... check the coupling scheme:
 
        Do i=2,no
+
         k=ITRA(Jintra(i-1),Jshell(i),Jintra(i))
+
+
         if(k.eq.0) then
          write(*,*) 'The coupling of shell',i,' is incorrect'
          Call Incode_cj

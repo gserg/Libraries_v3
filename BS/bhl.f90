@@ -13,7 +13,7 @@
       Real(8) :: BHL
       Real(8), external :: BVMV
 
-      if (iabs(LBS(i)-LBS(j)) .NE. 0) Stop ' HL:  LI <> LJ'
+      if (iabs(LBS(i)-LBS(j)) .ne. 0) Stop ' HL:  LI <> LJ'
 
       Call HLM (lbs(i))
 

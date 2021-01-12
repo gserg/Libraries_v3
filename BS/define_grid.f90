@@ -68,7 +68,7 @@
        Call mkgrid1(z)
        Open(nug,file=AF_grid)
        Call Print_grid_01(z)
-       Stop 'check knot.dat file for splines parameters ...'
+!       Stop 'check knot.dat file for splines parameters ...'
       End if 
 
       Open(nug,file=AF_grid); Rewind(nug)

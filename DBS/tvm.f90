@@ -1,5 +1,5 @@
 !======================================================================
-      Subroutine TVM(k,p,q,TA,VA,MA)
+      Subroutine TVM (k,p,q,TA,VA,MA)
 !======================================================================
 !     Calculate the expectation values for 
 !     TA - kinatic energy

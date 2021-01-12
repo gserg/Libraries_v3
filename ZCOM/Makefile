@@ -2,13 +2,13 @@ include $(HOME)/DEFS_03
 
 N  = libzcom
  
-S  =	MOD_zconst.f90           MOD_coef_list.f90        MOD_det.f90   MOD_dets.f90    \
+S  =	MOD_zconst.f90           MOD_coef_list.f90        MOD_det.f90              \
 	MOD_id4.f90              MOD_int_lst.f90          MOD_rk.f90               \
 	MOD_rk4.f90              MOD_tmat_ion.f90         MOD_tmat_list.f90        \
 	MOD_tm_list.f90          MOD_tm_LS.f90            MOD_zoef.f90             \
 	MOD_atoms_par.f90        MOD_atoms_LS.f90         MOD_orth.f90             \
-     MOD_after.f90            MOD_new_dets.f90         MOD_new_defs.f90         \
-     MOD_dip.f90              MOD_c_data.f90           MOD_obs.f90   MOD_file.f90    \
+	MOD_after.f90            MOD_new_dets.f90         MOD_new_defs.f90         \
+	MOD_dip.f90              MOD_c_data.f90           MOD_obs.f90   MOD_file.f90    \
 	angs_air.f90             ANG_dj_fact.f90          ANG_itra.f90             \
 	ANG_kappa.f90            ANG_t_ls_jk.f90          ANG_zcklm.f90            \
 	ANG_zclkl.f90            ANG_z_3j.f90             ANG_z_6j.f90             \
@@ -29,17 +29,18 @@ S  =	MOD_zconst.f90           MOD_coef_list.f90        MOD_det.f90   MOD_dets.f9
 	sl_scale.f90             sorting_routines.f90     spectroscopic.f90        \
 	splin3.f90               xlagr.f90                zis.f90                  \
 	xAy.f90                  det_fact.f90             stop_mp.f90              \
-     check_det_new.f90        det_fact_new.f90         index_tr.f90             \
-     derivatives.f90  
+	check_det_new.f90        det_fact_new.f90         index_tr.f90             \
+	derivatives.f90          check_bsr_name.f90                                \
+     Coulomb_integrals_0.f90  Coulomb_integrals_Z.f90
 
-	
+SS  =  FUN_coulfg.f
  
-O = $(S:.f90=.o)
+O = $(S:.f90=.o) $(SS:.f=.o)
  
 $(N).a : $(O)
 	ar rv $(N).a $(O)
 	mv $(N).a  $(LIBDIR)
-#	rm *.o    
+	rm *.o    
  
 clean:
 	rm -f *.o  *~

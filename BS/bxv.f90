@@ -27,7 +27,7 @@
 ! ... contribution from central diagonal (jp=k)
  
       Do i=1,n
-        y(i) = b(i,k)*v(i)
+       y(i) = b(i,k)*v(i)
       End do
  
 ! ... off diagonal

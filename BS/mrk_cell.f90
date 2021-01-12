@@ -16,7 +16,6 @@
 !     -------               of power k in the B-spline basis
 !                           (in module spline-integrals)
 !----------------------------------------------------------------------
-
       USE spline_param
       USE spline_integrals
       USE spline_moments

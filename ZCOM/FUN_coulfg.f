@@ -1,6 +1,7 @@
-!=======================================================================
-    Subroutine COULFG(XX,ETA1,XLMIN,XLMAX,FC,GC,FCP,GCP,MODE1,KFN,IFAIL)                                
-!=======================================================================
+C=======================================================================
+      Subroutine COULFG(XX,ETA1,XLMIN,XLMAX,FC,GC,FCP,GCP,
+     *                  MODE1,KFN,IFAIL)                                
+C=======================================================================
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 C                                                                      C
 C  REVISED COULOMB WAVEFUNCTION PROGRAM USING STEED'S METHOD           C

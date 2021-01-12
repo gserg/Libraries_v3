@@ -13,7 +13,7 @@ S  =	mod_orb_jj.f90           mod_symc.f90             mod_symt.f90             
 	prepare_iort_jj.f90      print_conf_jj.f90        Incode_int_jj.f90        \
 	read_conf_jj.f90         read_core_jj.f90         read_expn_jj.f90         \
 	smu.f90                  test_cj.f90              gen_jj_states.f90        \
-	coef_1conf.f90           coef_2conf_jj.f90        read_peel_orb.f90        \
+	coef_1conf_jj.f90        coef_2conf_jj.f90        read_peel_orb.f90        \
 	check_conf_jj.f90        read_iort_jj.f90
 
 O = $(S:.f90=.o)

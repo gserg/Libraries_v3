@@ -1,5 +1,5 @@
 !====================================================================
-    SUBROUTINE hlm(l)
+    Subroutine hlm(l)
 !====================================================================
 !   Sets up the matrix hl for the coulomb operator
 !
@@ -13,9 +13,9 @@
 !       z    nuclear charge
 !       l    orbital angular momentum
 !--------------------------------------------------------------------
-    USE spline_param
+    Use spline_param
     Use spline_atomic
-    USE spline_grid
+    Use spline_grid
     Use spline_galerkin
     Use spline_hl
 

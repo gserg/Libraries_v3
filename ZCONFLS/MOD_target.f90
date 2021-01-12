@@ -113,7 +113,7 @@
       write(nut,'(a,i4,5x,a)') &
                 'nelc  = ',nelc, ' !   number of electrons'
       write(nut,'(a,a2,4x,a)') &
-                'coupling = ',coupling, ' !  coupling scheme'
+                'coupling = ',coupling, ' !   coupling scheme'
 
       write(nut,'(80(''-''))')
       write(nut,'(a,i4,5x,a)') &
